@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/tudo.css">
+    <link rel="stylesheet" href="CSS/APIClima.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>API Climatempo</title>
+</head>
+<body>
+    <header class="navegacao">
+        <a class="linkExterno" href="index.html">Página principal</a>
+        <a class="linkExterno" href="APICEP.html">API CEP</a>
+        <a class="linkExterno" href="APIClima.html">API Climatempo</a>
+        <a class="linkExterno" href="APIDolar.html">API Dólar</a>
+    </header>
+    <main>
+
+        <div class="divPagina">
+            <h1>Previsão do tempo</h1>
+            <p>Digite o nome da cidade</p>
+            <input type="text" placeholder="Digite a cidade aqui" id="city"><br>
+            <button id="botaoEnviar" onclick="getWeather()">Pesquisar</button>
+            <p id="temperatura">Aguarde . . .</p>
+        </div>
+    </main>
+
+    <script src="scripts/scriptClima.js"></script>
+</body>
+</html>

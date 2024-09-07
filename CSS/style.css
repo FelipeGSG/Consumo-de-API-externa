@@ -1,0 +1,69 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+.titulo{
+    position: relative;
+    font-size: 4rem;
+
+}
+.textoSubtitulo{
+    width: 100%;
+}
+.divGeral{
+    background-color: rgb(57, 82, 94);
+    overflow: hidden;
+    width: calc(100% - 4rem);
+    height: fit-content;
+    max-height: 80%;
+    padding: 6rem 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    font-size: 1.6rem;
+    font-weight: 100;
+}
+    .linkExterno{
+        color: rgb(255, 240, 240);
+        transition: 0.5s;
+    }
+        .linkExterno:hover{
+            color: rgb(243, 143, 143);
+        }
+    .divOpcao{
+        display: flex;
+        width: 20vw;
+        min-width: 100px;
+        min-height: 150%;
+        height: fit-content;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(101, 178, 180);
+        border-radius: 1rem;
+        color: azure;
+        position: relative;
+        animation: slideComeco 1s ease-out;
+    }
+
+@keyframes slideComeco {
+    from{
+        left: -1500px;
+        opacity: 0.2;
+    }
+    to{
+        left: 0px
+    }
+}
+    

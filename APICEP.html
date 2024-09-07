@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/tudo.css">
+    <link rel="stylesheet" href="CSS/APICEP.css">
+    <title>API CEP</title>
+</head>
+<body>
+    <header class="navegacao">
+        <a class="linkExterno" href="index.html">Página principal</a>
+        <a class="linkExterno" href="APICEP.html">API CEP</a>
+        <a class="linkExterno" href="APIClima.html">API Climatempo</a>
+        <a class="linkExterno" href="APIDolar.html">API Dólar</a>
+    </header>
+        <h1>API-CEP</h1>
+        <h3>Digite seu CEP e irá autocompletar!</h3>
+        <form action="">
+            <fieldset class="fieldset">
+                <legend>Endereço</legend>
+                <div class="formulario1">
+                    <label for="">CEP:</label><br>
+                    <input placeholder="Insira seu CEP" type="text" id="cep">
+                    <br><br><br>
+                    <label for="">Rua:</label><br>
+                    <input placeholder="Insira sua rua" type="text" readonly id="rua">
+                    <br><br><br>
+                    <label for="">Número:</label><br>
+                    <input placeholder="Insira seu Numero" type="text" id="numero">
+                    <br><br><br>
+                </div>
+                <div class="formulario2">                    
+                    <label for="">Bairro:</label><br>
+                    <input placeholder="Insira seu bairro" type="text" readonly id="bairro">
+                    <br><br><br>
+                    <label for="">Cidade:</label><br>
+                    <input placeholder="Insira sua cidade " type="text" readonly id="cidade">
+                    <br><br><br>
+                    <label for="">Estado:</label><br>
+                    <input placeholder="Insira seu estado " type="text" readonly id="estado">
+                    <br><br><br>
+                </div>
+
+            </fieldset>
+        </form>
+
+    <script src="scripts/scriptCEP.js"></script>
+</body>
+</html>

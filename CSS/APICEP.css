@@ -1,0 +1,37 @@
+*{
+    color: aliceblue;
+}
+label{
+    font-weight: 500;
+}
+h1,h2,h3{
+    filter: drop-shadow(0px 0px 3px black);
+}
+body{
+    background-image: url(../img/fundo_CEP.jpg);
+    background-size: cover;
+    backdrop-filter: blur(3px);
+    height: 100vh;
+}
+.fieldset{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 40vw;
+    height: 50vh;
+    gap: 2rem;
+    padding: 15px 20px;
+    background-color: rgba(102, 123, 123, 0.322);
+    border-radius: 15px;
+}
+    legend{
+        font-size: 1.5em;
+        filter: drop-shadow(1px 1px 1px white);
+    }
+input{
+    font-size: 1.5rem;
+    border-radius: 10px;
+    border: 1px solid lightgrey;
+    background-color: lightcyan;
+    color: rgb(27, 26, 26);
+}
